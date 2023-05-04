@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upskill - Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login.css">
+	<script src="login.js"></script>
+</head>
+<body>
+    <div id="splash">
+        <img class="splash-img" src="assets/UP.png" alt="">
+    </div>
+	<div class="login-form-container">
+		<img class="logo" src="assets/Upskill logo.png" alt="logo">
+		<form id="login-form" action="#" method="POST">
+            <label for="user-type">Login as</label>
+			<div class="radio-group">
+				<label>
+					<input type="radio" name="user-type" value="staff" checked>
+                    <div class="radio-option">
+                        <img class="radio-img" src="assets/staff.png" alt="staff">
+                        Staff
+                    </div>
+				</label>
+				<label>
+					<input type="radio" name="user-type" value="learner">
+					<div class="radio-option">
+                        <img class="radio-img" src="assets/learner.png" alt="learner">
+                        Learner
+                    </div>
+				</label>
+			</div>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
+		<p>Don't have an account? <a href="signup.html">Sign up</a></p>
+	</div>
+    <script src="login.js"></script>
+</body>
+</html>

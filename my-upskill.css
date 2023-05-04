@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0080ff;
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 32px 16px;
+    max-width: 1200px;
+    margin: 80px auto auto auto;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+main h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+th {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 0;
+}
+
+td {
+    padding: 12px 0;
+}
+
+td:first-child {
+    font-weight: 700;
+    padding-right: 16px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}

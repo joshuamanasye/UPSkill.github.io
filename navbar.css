@@ -7,13 +7,17 @@ nav {
     align-items: center;
     height: 60px;
     background-color: rgb(235, 235, 235);
-    /* box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    position: fixed;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    /* position: fixed;
     top: 0; */
 }
 
 nav a {
     color: #767a7c;
+    text-decoration: none;
+}
+
+nav a:hover {
     text-decoration: none;
 }
 
@@ -32,7 +36,7 @@ nav p {
 }
 
 nav .current {
-    color: #1c3648;
+    color: #2c2f31;
     /* pointer-events: none; */
     /* cursor: default; */
 }
@@ -40,6 +44,7 @@ nav .current {
 nav .current:hover {
     transform: none;
     cursor: default;
+    color: #2c2f31;
 }
 
 .logo {

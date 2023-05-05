@@ -6,34 +6,26 @@
 }
 
 body {
-    color: #2c2c2c;
+    color: #283035;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #2c2c2c;
     margin: 0;
     padding: 0;
 }
 
-a {
-    color: #2c2c2c;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0080ff;
-    text-decoration: underline;
-}
-
-/* Main content styling */
+/* MAIN */
 main {
     padding: 32px 16px;
     max-width: 1200px;
     margin: 80px auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 main h2 {
@@ -43,19 +35,23 @@ main h2 {
 
 main h3 {
     font-size: 24px;
-    margin-bottom: 16px;
 }
 
 section {
-    background-color: #ffffff;
+    /* background-color: #2b4abd; */
     padding: 24px;
-    margin-bottom: 24px;
+    margin: 0.5rem;
+    border: solid 2px #283035;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+}
+
+ul {
+    list-style: none;
 }
 
 section h3 {
     font-size: 20px;
-    margin-bottom: 16px;
 }
 
 section p {
@@ -63,32 +59,118 @@ section p {
     margin-bottom: 16px;
 }
 
-table {
+/* MY PROGRESS */
+#my-progress {
+    max-width: 60%;
+}
+
+#my-progress ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#my-progress li {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-progress li:hover {
+    transform: translateY(-5px);
+}
+
+#my-progress h3 {
+    margin-top: 10px;
+}
+
+/* STOLEN PROGRESS CIRCLE */
+div[role="progressbar"] {
+    --size: 12rem;
+    --fg: #42c6eb;
+    --bg: #ddd;
+    --pgPercentage: var(--value);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+        ;
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+/* MY TODOS */
+#my-todos {
+    width: 35%;
+}
+
+#my-todos a {
+    text-decoration: none;
+    color: #283035;
+}
+
+#my-todos ul li {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 24px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
-th {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 16px 0;
+#my-todos ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-td {
-    padding: 12px 0;
+.open-img {
+    height: 100%;
+    float: right;
 }
 
-td:first-child {
-    font-weight: 700;
-    padding-right: 16px;
+/* MY ACHIEVEMENTS */
+#my-achievements {
+    width: 100%;
 }
 
-/* Footer styling */
-footer {
-    background-color: #ffffff;
-    padding: 16px;
+#my-achievements ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#my-achievements li {
+    flex: 1;
+    max-width: 20%;
+    color: #283035;
+    padding: 0.1rem;
+    margin: 1rem;
     text-align: center;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#my-achievements li:hover {
+    transform: translateY(-5px);
+}
+
+.badge-img {
+    margin-bottom: 10px;
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
 }

@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="learner.css">
 		<link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="sidebar.css">
 	</head>
 	<body>
 		<!-- NAVBAR -->
@@ -20,9 +21,7 @@
     
             <div class="middle">
                 <div class="nav-item">
-                    <a href="#">
-                        <p class="sidebar-content current">Home</p>
-                    </a>
+                    <p class="sidebar-content current">Home</p>
                 </div>
                 <div class="nav-item">
                     <a href="#">
@@ -45,6 +44,31 @@
             </div>
         </nav>
 
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-logo-container">
+                <img class="sidebar-logo" src="assets/Upskill logo.png" alt="">
+            </div>
+            <ul>
+                <li class="side-list"><a href="#">Forum</a></li>
+                <li class="side-list"><a href="#">Report</a></li>
+                <li class="side-list"><a href="#">Schedule</a></li>
+                <li>
+                    Bookmarks
+                    <ul class="bookmark-list">
+                        <li class="bookmark side-list"><a href="#">A forum post</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                        <li class="bookmark side-list"><a href="#">An assessment</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                        <li class="bookmark side-list"><a href="#">A learning material</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="toggle-sidebar">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </button>
+
         <!-- WELCOME -->
         <section class="welcome">
             <div class="welcome-text-container">
@@ -61,7 +85,6 @@
 
         <!-- MAIN -->
 		<main>
-
 			<section class="module" id="courses">
 				<h2 class="color-dark-blue">Courses</h2>
                 <p class="color-dark-blue">Click on the course to learn more and enroll.</p>
@@ -148,15 +171,30 @@
 			</section>
 			<section class="module" id="community">
 				<h2>Community</h2>
+				<p>Collaborate with others and improve together.</p>
 				<ul>
-					<li>Join a group to connect with learners and educators with similar interests.</li>
-					<li>Ask questions and get answers from educators and fellow learners.</li>
-					<li>Share your experience and insights with the community.</li>
+					<li>
+                        <img src="assets/community/group.png" alt="">
+                        <h3>GROUP</h3>
+                        Join a group to connect with learners and educators with similar interests.
+                    </li>
+					<li>
+                        <img src="assets/community/forum.png" alt="">
+                        <h3>FORUM</h3>
+                        Ask questions and get answers from educators and fellow learners.
+                    </li>
+					<li>
+                        <img src="assets/community/feed.png" alt="">
+                        <h3>FEED</h3>
+                        Share your experience and insights with the community.
+                    </li>
 				</ul>
 			</section>
 		</main>
 		<footer>
 			<p>Start exploring and Upskill yourself today!</p>
 		</footer>
+
+        <script src="sidebar.js"></script>
 	</body>
 </html>

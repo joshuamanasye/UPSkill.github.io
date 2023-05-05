@@ -83,7 +83,7 @@ body {
 h1 {
 	margin-top: 0;
 	font-size: 3rem;
-	color: #1c3648;
+	color: #283035;
 	letter-spacing: 5px;
 }
 
@@ -93,7 +93,7 @@ h1 {
 
 h2 {
 	font-size: 2rem;
-	color: #1c3648;
+	color: #283035;
 	margin-bottom: 30px;
 }
 
@@ -105,7 +105,7 @@ form {
 label {
 	align-self: flex-start;
 	font-size: 1.2rem;
-	color: #1c3648;
+	color: #283035;
 	margin-bottom: 10px;
 }
 
@@ -120,7 +120,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-	background-color: #1c3648;
+	background-color: #283035;
 	color: #fff;
 	font-size: 1.2rem;
 	padding: 10px;
@@ -141,7 +141,7 @@ p {
 }
 
 a {
-	color: #1c3648;
+	color: #283035;
 	text-decoration: none;
 }
 

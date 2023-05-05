@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>My Upskill - Learning Management System</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="rak, shelving, dachang, indonesia, serpong, supermarket, minimarket, meja kasir, mezzanine, mezzanine, rack, distributor, china, light-duty, medium-duty, heavy-duty, troli, trolley, troli, gondola, gudang, rak gudang, rak gondola, rak supermarket, rak minimarket, rak toko, rak swalayan, rak murah, murah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Upskill</title>
+        <link rel="icon" href="assets/UP.svg">
 		<link rel="stylesheet" href="my-upskill.css">
 		<link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="sidebar.css">
 	</head>
 	<body>
 		<!-- NAVBAR -->
@@ -16,8 +21,8 @@
     
             <div class="middle">
                 <div class="nav-item">
-                    <a href="#">
-                        <p class="sidebar-content current">Home</p>
+                    <a href="learner.html">
+                        <p class="sidebar-content">Home</p>
                     </a>
                 </div>
                 <div class="nav-item">
@@ -34,12 +39,35 @@
 
             <div class="right">
                 <p class="navbar-item">
-                    <a href="my-upskill.html">
-                        <p class="sidebar-content">My Upskill</p>
-                    </a>
+                    <p class="sidebar-content current">My Upskill</p>
                </p>
             </div>
         </nav>
+
+		<!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-logo-container">
+                <img class="sidebar-logo" src="assets/Upskill logo.png" alt="">
+            </div>
+            <ul>
+                <li class="side-list"><a href="#">Forum</a></li>
+                <li class="side-list"><a href="#">Report</a></li>
+                <li class="side-list"><a href="#">Schedule</a></li>
+                <li>
+                    Bookmarks
+                    <ul class="bookmark-list">
+                        <li class="bookmark side-list"><a href="#">A forum post</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                        <li class="bookmark side-list"><a href="#">An assessment</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                        <li class="bookmark side-list"><a href="#">A learning material</a><img class="edit-icon" src="assets/pencil.svg" alt=""></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="toggle-sidebar">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </button>
 
 		<!-- MAIN -->
 		<main>
@@ -47,56 +75,72 @@
 				<h2>My Learning Progress</h2>
 				<ul>
 					<li>
-						<h3>Introduction to Programming</h3>
-						<p>Completed 50% of course</p>
-					</li>
-					<li>
-						<h3>Digital Marketing 101</h3>
-						<p>Completed 80% of course</p>
-					</li>
-					<li>
-						<h3>Business Analytics</h3>
-						<p>Not started</p>
-					</li>
-					<li>
+						<div role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="--value:82"></div>
 						<h3>Machine Learning</h3>
-						<p>Completed 20% of course</p>
+					</li>
+					<li>
+						<div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>
+						<h3>HTML Canvas</h3>
+					</li>
+					<li>
+						<div role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="--value:0"></div>
+						<h3>Business Analytics</h3>
+					</li>
+					<li>
+						<div role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100" style="--value:96"></div>
+						<h3>Database</h3>
 					</li>
 				</ul>
 			</section>
 			<section id="my-todos">
 				<h2>My To-Dos</h2>
 				<ul>
-					<li>
-						<h3>Complete Introduction to Programming</h3>
-						<p>Finish remaining 50% of course</p>
-					</li>
-					<li>
-						<h3>Start Business Analytics</h3>
-						<p>Course is available</p>
-					</li>
-					<li>
-						<h3>Complete Machine Learning</h3>
-						<p>Finish remaining 80% of course</p>
-					</li>
+					<a href="#">
+						<li>
+							<h3>Machine Learning Quiz #2</h3>
+							<img class="open-img" src="assets/arrow-up-right-square.svg" alt="">
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<h3>Gameloop with Javascript</h3>
+							<img class="open-img" src="assets/arrow-up-right-square.svg" alt="">
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<h3>Take Business Analytics lesson</h3>
+							<img class="open-img" src="assets/arrow-up-right-square.svg" alt="">
+						</li>
+					</a>
 				</ul>
 			</section>
 			<section id="my-achievements">
 				<h2>My Achievements</h2>
 				<ul>
 					<li>
-						<h3>Certified Digital Marketer</h3>
-						<p>Earned on April 30, 2023</p>
-					</li>
+                        <img class="badge-img" src="assets/badges/2.png" alt="">
+                        <h3>C Champion</h3>
+						2 April 2022
+                    </li>
 					<li>
-						<h3>Data Science Expert</h3>
-						<p>Earned on March 15, 2023</p>
-					</li>
+                        <img class="badge-img" src="assets/badges/4.png" alt="">
+                        <h3>Python Tamer</h3>
+						18 January 2023
+                    </li>
+					<li>
+                        <img class="badge-img" src="assets/badges/5.png" alt="">
+                        <h3>C++ Hero</h3>
+						10 August 2022
+                    </li>
 				</ul>
 			</section>
 		</main>
+
 		<footer>
-			<p>Keep up the good work and continue learning with Upskill!</p>
+			<p>Keep up the good work and keep learnign with Upskill!</p>
 		</footer>
+
+        <script src="sidebar.js"></script>
 	</body>
 </html>

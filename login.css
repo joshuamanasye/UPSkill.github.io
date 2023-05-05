@@ -27,7 +27,7 @@ body {
 
 .splash-img {
 	max-height: 40vh;
-	max-width: 40vw;
+	width: 40vw;
 	-webkit-animation: breathing 2s ease-out infinite normal;
     animation: breathing 2s ease-out infinite normal;
 }

@@ -67,6 +67,10 @@ main {
 	background-color: #fff;
 }
 
+ul {
+    margin-top: 20px;
+}
+
 /* COURSE */
 
 #courses ul {
